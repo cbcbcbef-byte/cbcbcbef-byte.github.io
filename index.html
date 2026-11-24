@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My-Local-agent-001｜個人 AI 助理</title>
+  <style>
+    :root {
+      --bg: #eef7fb;
+      --card: #ffffff;
+      --ink: #243447;
+      --muted: #5a6d82;
+      --accent: #4aa3c8;
+      --accent-soft: #e0f2fa;
+      --border: #d7e8f2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #e7f4fb 0%, #f7fbfe 100%);
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 640px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px 30px 28px;
+      box-shadow: 0 14px 36px rgba(42, 102, 134, 0.08);
+      text-align: center;
+    }
+    .seal-wrap {
+      width: 190px;
+      height: 150px;
+      margin: 0 auto 12px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: #216d8d;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 26px;
+      letter-spacing: 0.3px;
+    }
+    .subtitle {
+      margin: 0 auto 22px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      max-width: 500px;
+    }
+    .features {
+      text-align: left;
+      background: #f8fcfe;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+    }
+    .features h2 {
+      margin: 0 0 10px;
+      font-size: 15px;
+      color: #216d8d;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 20px;
+      line-height: 1.75;
+      font-size: 14.5px;
+      color: var(--ink);
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 14.5px;
+      padding: 11px 20px;
+      border-radius: 12px;
+      transition: background 0.15s ease;
+    }
+    .btn:hover { background: #368fb5; }
+    footer {
+      margin-top: 22px;
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    footer a {
+      color: #216d8d;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="seal-wrap" aria-hidden="true">
+      <svg viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="34" cy="44" r="7" fill="#cbeaf8" />
+        <circle cx="48" cy="28" r="4" fill="#d9f0fb" />
+        <circle cx="186" cy="40" r="6" fill="#cbeaf8" />
+        <ellipse cx="110" cy="148" rx="68" ry="11" fill="#dbeff8" />
+        <path d="M162 122 C182 114, 194 126, 184 136 C176 144, 162 138, 154 133 Z" fill="#cfd9e3" stroke="#7c8ea3" stroke-width="2.5" stroke-linejoin="round" />
+        <ellipse cx="112" cy="112" rx="58" ry="34" fill="#f7fafc" stroke="#7c8ea3" stroke-width="2.5" />
+        <circle cx="88" cy="78" r="36" fill="#ffffff" stroke="#7c8ea3" stroke-width="2.5" />
+        <path d="M62 116 C44 122, 42 136, 58 136 C68 136, 76 128, 76 120" fill="#eef4f9" stroke="#7c8ea3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M118 122 C112 135, 126 142, 136 134 C142 129, 138 120, 128 118" fill="#eef4f9" stroke="#7c8ea3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        <ellipse cx="64" cy="86" rx="7" ry="4.5" fill="#ffc4cf" opacity="0.85" />
+        <ellipse cx="107" cy="86" rx="7" ry="4.5" fill="#ffc4cf" opacity="0.85" />
+        <circle cx="72" cy="74" r="5" fill="#243447" />
+        <circle cx="70.5" cy="72.2" r="1.8" fill="#ffffff" />
+        <circle cx="99" cy="74" r="5" fill="#243447" />
+        <circle cx="97.5" cy="72.2" r="1.8" fill="#ffffff" />
+        <ellipse cx="85.5" cy="83" rx="4.5" ry="3.2" fill="#3a4c61" />
+        <path d="M85.5 86.2 L85.5 89.5 M79.5 89.5 Q82.5 93 85.5 89.5 Q88.5 93 91.5 89.5" fill="none" stroke="#3a4c61" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M58 81 L44 78 M57 86 L43 87" stroke="#8b9cb0" stroke-width="1.8" stroke-linecap="round" />
+        <path d="M113 81 L127 78 M114 86 L128 87" stroke="#8b9cb0" stroke-width="1.8" stroke-linecap="round" />
+        <path d="M124 38 C124 33, 131 31, 133 36 C135 31, 142 33, 142 38 C142 44, 133 49, 133 49 C133 49, 124 44, 124 38 Z" fill="#ff8fa3" />
+      </svg>
+    </div>
+
+    <span class="badge">Personal AI Assistant · 個人自用授權頁</span>
+    <h1>My-Local-agent-001</h1>
+    <p class="subtitle">
+      本應用程式為開發者本人專用的本機 AI 助理工具，僅用於連結個人 Google 帳戶，協助每日行事曆晨報與信件分類整理。
+    </p>
+
+    <section class="features">
+      <h2>應用程式功能說明（App Functionality）</h2>
+      <ul>
+        <li><strong>Google Calendar</strong>：唯讀查詢今日行程，用於產生每日個人晨報。</li>
+        <li><strong>Gmail</strong>：讀取寄件者與主旨進行標籤分類，不主動寄信、不刪除或封存郵件。</li>
+        <li><strong>Google Workspace 工具整合</strong>：僅依本人明確指令存取授權的個人資料。</li>
+      </ul>
+    </section>
+
+    <div class="actions">
+      <a class="btn" href="./privacy.html">查看隱私權政策（Privacy Policy）</a>
+    </div>
+
+    <footer>
+      My-Local-agent-001 · Personal Use Only<br />
+      <a href="./privacy.html">Privacy Policy（隱私權政策）</a>
+    </footer>
+  </main>
+</body>
+</html>
